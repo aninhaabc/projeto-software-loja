@@ -49,7 +49,7 @@ jobs:
           script: |
             docker stop loja
             docker rm --force loja
-            docker run -d -p 8082:8082 \
+            docker run -d -p 8081:8081 \
               -e USER_DB=${{ secrets.USER_DB }} \
               -e PASS_DB=${{ secrets.PASS_DB }} \
               -e PATH_DB=${{ secrets.PATH_DB }} \
